@@ -1,6 +1,14 @@
 import '../styles/hero.css';
 
 function Hero() {
+  const handleScrollToContact = (e) => {
+    e.preventDefault();
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="hero section" aria-label="Présentation">
       <div className="container">
@@ -19,7 +27,7 @@ function Hero() {
           <a href="https://github.com/caouadan" className="btn btn--primary" target="_blank" rel="noopener noreferrer" aria-label="Voir le profil GitHub">
             GitHub
           </a>
-          <a href="#contact" className="btn btn--secondary" aria-label="Aller à la section contact">
+          <a href="#contact" onClick={handleScrollToContact} className="btn btn--secondary" aria-label="Aller à la section contact">
             Me contacter
           </a>
         </div>

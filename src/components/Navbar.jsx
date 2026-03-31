@@ -7,12 +7,21 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { href: "#about", label: "À propos" },
-    { href: "#skills", label: "Compétences" },
-    { href: "#projects", label: "Projets" },
-    { href: "#timeline", label: "Parcours" },
-    { href: "#contact", label: "Contact" }
+    { id: "about", label: "À propos" },
+    { id: "skills", label: "Compétences" },
+    { id: "projects", label: "Projets" },
+    { id: "timeline", label: "Parcours" },
+    { id: "contact", label: "Contact" }
   ];
+
+  const handleScrollToSection = (e, sectionId) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false);
+    }
+  };
 
   return (
     <nav className="navbar" role="navigation" aria-label="Navigation principale">
@@ -33,11 +42,11 @@ function Navbar() {
         </button>
         <ul className={`navbar__links ${isOpen ? 'navbar__links--open' : ''}`}>
           {links.map((link) => (
-            <li key={link.href}>
+            <li key={link.id}>
               <a
-                href={link.href}
+                href={`#${link.id}`}
                 className="navbar__link"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => handleScrollToSection(e, link.id)}
               >
                 {link.label}
               </a>
