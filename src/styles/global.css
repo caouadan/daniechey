@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
 
 :root {
-  /* Base colors */
+  /* Couleurs de base */
   --color-bg: #FCE8C6;
   --color-bg-alt: #FFFDF5;
   --color-text: #2A2A2A;
@@ -13,7 +13,7 @@
   --color-tag-2: #d1e7aa;
   --color-tag-3: #58B0C8;
 
-  /* Legacy variables */
+  /* Variables */
   --color-surface: var(--color-white);
   --color-surface-hover: var(--color-tag-3);
 

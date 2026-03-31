@@ -20,9 +20,9 @@ function Navbar() {
     e.preventDefault();
     setIsOpen(false);
 
-    // Check if we're already on the home page
+    // Vérifier si on est déjà sur la page d'accueil
     if (location.pathname === '/') {
-      // We're on home page, scroll directly
+      // On est sur la page d'accueil, scroller directement
       const element = document.getElementById(sectionId);
       if (element) {
         setTimeout(() => {
@@ -30,7 +30,7 @@ function Navbar() {
         }, 0);
       }
     } else {
-      // We're on a different page, navigate to home and scroll
+      // On est sur une autre page, naviguer vers l'accueil et scroller
       navigate('/', { state: { scrollSection: sectionId } });
     }
   };

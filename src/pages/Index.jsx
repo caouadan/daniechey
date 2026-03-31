@@ -14,7 +14,7 @@ function Index() {
   const location = useLocation();
 
   useEffect(() => {
-    // Scroll to section if we navigated from another page
+    // Scroller vers la section si on a navigué depuis une autre page
     if (location.state?.scrollSection) {
       const element = document.getElementById(location.state.scrollSection);
       if (element) {
