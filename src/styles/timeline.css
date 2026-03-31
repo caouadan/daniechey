@@ -1,0 +1,136 @@
+#timeline {
+  background-color: #FCE8C6;
+  background-image:
+    repeating-linear-gradient(0deg, #FFFDF5, #FFFDF5 1px, transparent 1px, transparent 40px),
+    repeating-linear-gradient(90deg, #FFFDF5, #FFFDF5 1px, transparent 1px, transparent 40px);
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: var(--border-thick-width);
+  background-color: var(--color-border);
+  transform: translateX(-50%);
+}
+
+.timeline__item {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2.5rem;
+}
+
+.timeline__item--left {
+  left: 0;
+  text-align: right;
+  padding-right: 3rem;
+}
+
+.timeline__item--right {
+  left: 50%;
+  padding-left: 3rem;
+}
+
+.timeline__dot {
+  position: absolute;
+  top: 1.5rem;
+  width: 18px;
+  height: 18px;
+  background-color: var(--color-surface-hover);
+  border: var(--border-thick);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline__item--left .timeline__dot {
+  right: -9px;
+}
+
+.timeline__item--right .timeline__dot {
+  left: -9px;
+}
+
+.timeline__card {
+  background-color: var(--color-white);
+  border: var(--border-thick);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-brutal-sm);
+  padding: 1.25rem;
+}
+
+.timeline__date {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline__text {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline__item {
+    width: 100%;
+    left: 0;
+    padding-left: 3.5rem;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .timeline__item--left {
+    text-align: left;
+    padding-right: 0;
+  }
+
+  .timeline__item--right {
+    left: 0;
+  }
+
+  .timeline__item--left .timeline__dot,
+  .timeline__item--right .timeline__dot {
+    left: 11px;
+    right: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .timeline::before {
+    left: 12px;
+  }
+
+  .timeline__item {
+    padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+  }
+
+  .timeline__item--left .timeline__dot,
+  .timeline__item--right .timeline__dot {
+    left: 3px;
+  }
+
+  .timeline__card {
+    padding: 1rem;
+  }
+
+  .timeline__date {
+    font-size: 1.1rem;
+  }
+
+  .timeline__text {
+    font-size: 0.8rem;
+  }
+}
