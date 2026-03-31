@@ -1,3 +1,32 @@
+// Images imports
+import ohmyfoodAccueil from '../../assets/ohmyfood/ohmyfood-page-accueil.jpg';
+import ohmyfoodRestaurant from '../../assets/ohmyfood/ohmyfood-page-restaurant.jpg';
+import ohmyfoodMobile from '../../assets/ohmyfood/ohmyfood-version-mobile.jpg';
+import kasaAccueil from '../../assets/kasa/kasa-page-accueil.jpg';
+import kasaLogement from '../../assets/kasa/kasa-page-logement.jpg';
+import kasaPropos from '../../assets/kasa/kasa-page-a-propos.jpg';
+import sophieAccueil from '../../assets/sophiebluel/sophiebluel-page-accueil.jpg';
+import sophieConnexion from '../../assets/sophiebluel/sophiebluel-page-connexion.jpg';
+import sophieEdition from '../../assets/sophiebluel/sophiebluel-mode-edition.jpg';
+import coachAccueil from '../../assets/coachlinguistique/coachlinguistique-page-accueil.jpg';
+import coachFaq from '../../assets/coachlinguistique/coachlinguistique-page-faq.jpg';
+import coachMobile from '../../assets/coachlinguistique/coachlinguistique-version-mobile.jpg';
+import energiesMenu from '../../assets/energiesrenouvelables/energiesrenouvelables-menu.jpg';
+import energiesSlideInteractive from '../../assets/energiesrenouvelables/energiesrenouvelables-slide-interactive.jpg';
+import energiesSlideLecon from '../../assets/energiesrenouvelables/energiesrenouvelables-slide-lecon-type.jpg';
+import alimentationMenu from '../../assets/alimentation/alimentation-debut-menu.jpg';
+import alimentationSlideInteractive from '../../assets/alimentation/alimentation-slide-interactive.jpg';
+import alimentationSlideQuizz from '../../assets/alimentation/alimentation-slide-quizz.jpg';
+import rechercheMenu from '../../assets/rechercheweb/rechercheweb-menu.jpg';
+import rechercheExercice from '../../assets/rechercheweb/rechercheweb-slide-intro-exercice.jpg';
+import rechercheSimulation from '../../assets/rechercheweb/rechercheweb-slide-simulation.jpg';
+import kampoyAccueil from '../../assets/kampoy/kampoy-page-accueil.jpg';
+import kampoyMobile from '../../assets/kampoy/kampoy-page-connexion-version-mobile.jpg';
+import kampoyCommandes from '../../assets/kampoy/kampoy-page-marchand-commandes.jpg';
+import cubynAffiche from '../../assets/cubyn/cubyn-affiche-campagne-recrutement-cdi.jpg';
+import cubynInfographie from '../../assets/cubyn/cubyn-affiche-recrutement-cdi-infographie.jpg';
+import cubynBanniere from '../../assets/cubyn/cubyn-banniere-salon-professionnel.jpg';
+
 export const projects = [
   // Dev projects
   {
@@ -13,9 +42,9 @@ export const projects = [
     link: "https://caouadan.github.io/Ohmyfood/",
     categories: ["dev"],
     images: [
-      "/assets/ohmyfood/ohmyfood-page-accueil.jpg",
-      "/assets/ohmyfood/ohmyfood-page-restaurant.jpg",
-      "/assets/ohmyfood/ohmyfood-version-mobile.jpg"
+      ohmyfoodAccueil,
+      ohmyfoodRestaurant,
+      ohmyfoodMobile
     ]
   },
   {
@@ -31,9 +60,9 @@ export const projects = [
     link: "https://caouadan.github.io/kasa/",
     categories: ["dev"],
     images: [
-      "/assets/kasa/kasa-page-accueil.jpg",
-      "/assets/kasa/kasa-page-logement.jpg",
-      "/assets/kasa/kasa-page-a-propos.jpg"
+      kasaAccueil,
+      kasaLogement,
+      kasaPropos
     ]
   },
   {
@@ -49,9 +78,9 @@ export const projects = [
     link: "https://caouadan.github.io/Portfolio-sophie-bluel-demo/",
     categories: ["dev"],
     images: [
-      "/assets/sophiebluel/sophiebluel-page-accueil.jpg",
-      "/assets/sophiebluel/sophiebluel-page-connexion.jpg",
-      "/assets/sophiebluel/sophiebluel-mode-edition.jpg"
+      sophieAccueil,
+      sophieConnexion,
+      sophieEdition
     ]
   },
   {
@@ -67,9 +96,9 @@ export const projects = [
     link: "https://caouadan.github.io/veronica-coaching/",
     categories: ["dev", "graphisme"],
     images: [
-      "/assets/coachlinguistique/coachlinguistique-page-accueil.jpg",
-      "/assets/coachlinguistique/coachlinguistique-page-faq.jpg",
-      "/assets/coachlinguistique/coachlinguistique-version-mobile.jpg"
+      coachAccueil,
+      coachFaq,
+      coachMobile
     ]
   },
   // E-learning projects
@@ -86,9 +115,9 @@ export const projects = [
     link: "https://learn-in.fr/_SiteInfans/_ExtraitsFormations/MIPPER/Extrait_EnergiesRenouvelables/story.html?username=guest",
     categories: ["elearning", "graphisme"],
     images: [
-      "/assets/energiesrenouvelables/energiesrenouvelables-menu.jpg",
-      "/assets/energiesrenouvelables/energiesrenouvelables-slide-interactive.jpg",
-      "/assets/energiesrenouvelables/energiesrenouvelables-slide-lecon-type.jpg"
+      energiesMenu,
+      energiesSlideInteractive,
+      energiesSlideLecon
     ]
   },
   {
@@ -104,9 +133,9 @@ export const projects = [
     link: "https://caouadan.github.io/portfolio-learning/soin%20alimentation%20danie%20chey%20export%20web/story.html",
     categories: ["elearning", "graphisme"],
     images: [
-      "/assets/alimentation/alimentation-debut-menu.jpg",
-      "/assets/alimentation/alimentation-slide-interactive.jpg",
-      "/assets/alimentation/alimentation-slide-quizz.jpg"
+      alimentationMenu,
+      alimentationSlideInteractive,
+      alimentationSlideQuizz
     ]
   },
   {
@@ -122,9 +151,9 @@ export const projects = [
     link: "https://learn-in.fr/_SiteInfans/_ExtraitsFormations/PIX/Extrait_EffectuerUneRechercheInternet/story.html?username=guest",
     categories: ["elearning", "graphisme"],
     images: [
-      "/assets/rechercheweb/rechercheweb-menu.jpg",
-      "/assets/rechercheweb/rechercheweb-slide-intro-exercice.jpg",
-      "/assets/rechercheweb/rechercheweb-slide-simulation.jpg"
+      rechercheMenu,
+      rechercheExercice,
+      rechercheSimulation
     ]
   },
   // Graphisme projects
@@ -141,9 +170,9 @@ export const projects = [
     link: "https://kampoy.com/home",
     categories: ["graphisme"],
     images: [
-      "/assets/kampoy/kampoy-page-accueil.jpg",
-      "/assets/kampoy/kampoy-page-connexion-version-mobile.jpg",
-      "/assets/kampoy/kampoy-page-marchand-commandes.jpg"
+      kampoyAccueil,
+      kampoyMobile,
+      kampoyCommandes
     ]
   },
   {
@@ -159,9 +188,9 @@ export const projects = [
     link: "#",
     categories: ["graphisme"],
     images: [
-      "/assets/cubyn/cubyn-affiche-campagne-recrutement-cdi.jpg",
-      "/assets/cubyn/cubyn-affiche-recrutement-cdi-infographie.jpg",
-      "/assets/cubyn/cubyn-banniere-salon-professionnel.jpg"
+      cubynAffiche,
+      cubynInfographie,
+      cubynBanniere
     ]
   }
 ];
