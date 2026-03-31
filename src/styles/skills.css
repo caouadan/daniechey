@@ -31,6 +31,11 @@
   background-color: var(--color-bg-alt);
 }
 
+.skills__accordion-header:focus-visible {
+  outline: 2px solid var(--color-border);
+  outline-offset: -2px;
+}
+
 .skills__accordion-header--active {
   background-color: var(--color-bg-alt);
 }

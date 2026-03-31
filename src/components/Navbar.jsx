@@ -1,10 +1,12 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import '../styles/navbar.css';
 import logo from '../../assets/logo-portfolio-danie-chey.webp';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const links = [
     { id: "about", label: "À propos" },
@@ -16,10 +18,20 @@ function Navbar() {
 
   const handleScrollToSection = (e, sectionId) => {
     e.preventDefault();
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false);
+    setIsOpen(false);
+
+    // Check if we're already on the home page
+    if (location.pathname === '/') {
+      // We're on home page, scroll directly
+      const element = document.getElementById(sectionId);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 0);
+      }
+    } else {
+      // We're on a different page, navigate to home and scroll
+      navigate('/', { state: { scrollSection: sectionId } });
     }
   };
 

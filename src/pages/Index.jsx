@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
@@ -9,6 +11,20 @@ import '../styles/global.css';
 import '../styles/components.css';
 
 function Index() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Scroll to section if we navigated from another page
+    if (location.state?.scrollSection) {
+      const element = document.getElementById(location.state.scrollSection);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [location.state?.scrollSection]);
+
   return (
     <>
       <Navbar />

@@ -52,28 +52,33 @@ function Contact() {
               </div>
             )}
             <form className="contact__form" onSubmit={handleSubmit} aria-label="Formulaire de contact">
+              <label htmlFor="name">Votre nom</label>
               <input
+                id="name"
                 className="contact__input"
                 type="text"
                 name="name"
                 placeholder="Ton nom"
                 required
-                aria-label="Votre nom"
+                autoComplete="name"
               />
+              <label htmlFor="email">Votre email</label>
               <input
+                id="email"
                 className="contact__input"
                 type="email"
                 name="email"
                 placeholder="Ton email"
                 required
-                aria-label="Votre email"
+                autoComplete="email"
               />
+              <label htmlFor="message">Votre message</label>
               <textarea
+                id="message"
                 className="contact__textarea"
                 name="message"
                 placeholder="Ton message"
                 required
-                aria-label="Votre message"
               />
               <button type="submit" className="contact__submit">
                 Envoyer

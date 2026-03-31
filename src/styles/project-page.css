@@ -77,6 +77,18 @@
   box-shadow: var(--shadow-brutal-sm);
 }
 
+.project-page__thumbnail:focus-visible {
+  outline: 2px solid var(--color-border);
+  outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+  .project-page__thumbnail:hover {
+    transform: none;
+    box-shadow: var(--shadow-brutal);
+  }
+}
+
 .project-page__thumbnail--active {
   border-color: var(--color-border);
   border-width: 3px;

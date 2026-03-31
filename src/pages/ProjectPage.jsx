@@ -20,9 +20,9 @@ function ProjectPage() {
       <main>
         <div className="project-page">
           <div className="container">
-            <Link to="/" className="back-link">Retour a l'accueil</Link>
+            <Link to="/" className="back-link">Retour à l'accueil</Link>
 
-            <h1 className="project-page__title">{project ? project.title : 'Projet non trouve'}</h1>
+            <h1 className="project-page__title">{project ? project.title : 'Projet non trouvé'}</h1>
 
             {project && (
               <>
