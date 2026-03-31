@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/navbar.css';
+import logo from '../../assets/logo-portfolio-danie-chey.webp';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,7 @@ function Navbar() {
     <nav className="navbar" role="navigation" aria-label="Navigation principale">
       <div className="container navbar__inner">
         <Link to="/" className="navbar__logo" aria-label="Danie Chey - Accueil">
-          <img src="/assets/logo-portfolio-danie-chey.webp" alt="" className="navbar__logo-dot" aria-hidden="true" />
+          <img src={logo} alt="" className="navbar__logo-dot" aria-hidden="true" />
           Danie Chey
         </Link>
         <button

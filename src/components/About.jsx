@@ -1,4 +1,5 @@
 import '../styles/about.css';
+import illustration from '../../assets/illustration-profil.jpg';
 
 function About() {
   return (
@@ -6,7 +7,7 @@ function About() {
       <div className="container">
         <h2 className="section-title">À propos</h2>
         <div className="about__card">
-          <img src="/assets/illustration-profil.jpg" alt="Danie Chey" className="about__image" />
+          <img src={illustration} alt="Danie Chey" className="about__image" />
           <div className="about__content">
             <div className="about__card-header">Danie Chey</div>
             <p className="about__text">
