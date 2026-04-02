@@ -13,15 +13,17 @@ function Index() {
   useEffect(() => {
     const hash = window.location.hash;
 
-    const sectionId = hash.split('#').pop();
+    if (hash) {
+      const sectionId = hash.split('#').pop();
 
-    if (sectionId) {
-      const element = document.getElementById(sectionId);
+      if (sectionId) {
+        const element = document.getElementById(sectionId);
 
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
+        if (element) {
+          setTimeout(() => {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }, 100);
+        }
       }
     }
   }, []);
