@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/navbar.css';
 import logo from '../../assets/logo-portfolio-danie-chey.webp';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
   const navigate = useNavigate();
 
   const links = [
@@ -31,7 +30,7 @@ function Navbar() {
       }
     } else {
       // On est sur une autre page, naviguer vers l'accueil et scroller
-      navigate('/', { state: { scrollSection: sectionId } });
+      navigate(`/#${sectionId}`);
     }
   };
 
