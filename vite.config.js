@@ -4,7 +4,9 @@ import path from "path";
 
 export default defineConfig({
   base: "/daniechey/",
-  outDir: "docs",
+  build: {
+    outDir: path.resolve(__dirname, "docs"),
+  },
   server: {
     host: "::",
     port: 8080,
