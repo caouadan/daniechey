@@ -11,7 +11,7 @@ function About() {
           <div className="about__content">
             <div className="about__card-header">Danie Chey</div>
             <p className="about__text">
-              Designer et développeuse, je conbine technologie, créativité et pédagogie pour concevoir des expériences digitales à la fois belles et fonctionnelles. Mon profil hybride me permet de créer des solutions sur mesure : applications accessibles, identités visuelles percutantes ou modules d’apprentissage interactifs.
+              Designer et développeuse, je combine technologie, créativité et pédagogie pour concevoir des expériences digitales à la fois belles et fonctionnelles. Mon profil hybride me permet de créer des solutions sur mesure : applications accessibles, identités visuelles percutantes ou modules d’apprentissage interactifs.
             </p>
             <div className="about__tags">
               <span className="tag tag--dark">Développement</span>
